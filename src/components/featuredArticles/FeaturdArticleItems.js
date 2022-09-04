@@ -10,7 +10,7 @@ const FeaturdArticleItem = ({article}) => {
         </div>
         <div className="w-2/3">
             <p className="text-gray-600 text-sm">{moment(article?.publishedAt).format('LL')}</p>
-            <h2 className="lg:text-2xl font-semibold text-gray-700">{article?.title}</h2>
+            <a href={article?.url} target="_blank" className="lg:text-2xl font-semibold text-gray-700" rel="noreferrer">{article?.title}</a>
         </div>
     </div>
   )
